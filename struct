@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+struct BOOK
+{
+    char name[50];
+    int price;
+};
+
+int main()
+{
+    struct BOOK book = {"活着 or ALIVE ",7};
+
+    printf("推荐的书是/I recommend this for you. It is%s\n",book.name);
+
+    printf("价格为/the price is %d yuan\n",book.price);    
+
+    return 0;
+}
